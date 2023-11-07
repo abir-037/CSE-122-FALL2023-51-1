@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+void bigger(int n)
+{
+    if(n==1)
+    {
+        int x,y,z;
+        cin>>x>>y>>z;
+        if (x >= y && x >= z)cout<<x;
+        else if (y >= x && y >= z) cout<<y;
+        else cout<<z;
+    }
+    else if(n==2)
+    {
+        char x,y,z;
+        cin>>x>>y>>z;
+        if (x >= y && x >= z)cout<<x;
+        else if (y >= x && y >= z) cout<<y;
+        else cout<<z;
+    }
+    else if(n==3)
+    {
+
+        float x,y,z;
+        cin>>x>>y>>z;
+        if (x >= y && x >= z) cout<<x;
+        else if (y >= x && y >= z) cout<<y;
+        else cout<<z;
+    }
+}
+
+int main()
+{
+    cout<<"Enter 1 for integer"<<endl<<"Enter 2 for character"<<endl<<"Enter 3 for float"<<endl;
+    int n;
+    cin>>n;
+    bigger(n);
+
+    return 0;
+}
